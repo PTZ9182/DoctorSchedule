@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Warna Baru -->
+    <color name="blue">#2987DE</color>
+    <color name="blue1">#3CB4F0</color>
+    <color name="greenblue">#3CDFC0</color>
+    <color name="orange">#F6894C</color>
 </resources>

@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Doctor Schedule</string>
+
+    <!--Login-->
+    <string name="logo">logo</string>
+    <string name="login">Login Akun</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="isiform_email">Email</string>
+    <string name="isiform_password">Password</string>
+    <string name="button_login">login</string>
+    <string name="belumregis">Belum punya akun perusahaan?</string>
+    <string name="regis">Daftar</string>
+
+    <!--Register-->
+    <string name="rg_logo">logo</string>
+    <string name="rg_nama">Nama Akun</string>
+    <string name="rg_isiform_nama">Nama Akun</string>
+    <string name="rg_register">Daftar Akun</string>
+    <string name="rg_email">Email</string>
+    <string name="rg_password">Password</string>
+    <string name="rg_isiform_email">Email</string>
+    <string name="rg_isiform_password">Password</string>
+    <string name="rg_button_daftar">Daftar</string>
+    <string name="rg_punyaakun">Sudah punya akun?</string>
+    <string name="rg_login">Masuk</string>
 </resources>

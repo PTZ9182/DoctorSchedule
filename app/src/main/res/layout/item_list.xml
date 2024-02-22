@@ -1,0 +1,157 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/item_foto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/item_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/item_nama"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_spesialis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_spesialis"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_nama" />
+
+            <ImageView
+                android:id="@+id/item_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_spesialis"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/item_hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:text="@string/item_hari"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_spesialis" />
+
+            <TextView
+                android:id="@+id/item_tglbln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_tglbln"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_spesialis" />
+
+            <ImageView
+                android:id="@+id/item_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_history_toggle_off_24"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_spesialis"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/item_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="324dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_jam"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/item_foto"
+                app:layout_constraintTop_toBottomOf="@+id/item_spesialis" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/exercise_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_exercise_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_aplikasi"
+            tools:ignore="ContentDescription" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

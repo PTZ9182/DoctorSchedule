@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pick_background_1"
+    tools:context="com.example.ui.HomeActivity">
+
+    <TextView
+        android:id="@+id/hello_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hello_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/nama_home"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_home"/>
+
+    <ImageView
+        android:id="@+id/gambar_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_docter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/pick_background_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+
+
+            <ImageView
+                android:id="@+id/home_foto"
+                android:layout_width="162dp"
+                android:layout_height="128dp"
+                android:src="@drawable/logo_aplikasi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_nama1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/item_nama"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_spesialis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_spesialis"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_nama1" />
+
+            <ImageView
+                android:id="@+id/home_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_hari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:text="@string/item_hari"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis" />
+
+            <TextView
+                android:id="@+id/home_tglbln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_tglbln"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis" />
+
+            <ImageView
+                android:id="@+id/home_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_history_toggle_off_24"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="324dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_jam"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/kpkp_search"
+        android:layout_width="386dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/pick_background_menu"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:iconifiedByDefault="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_docter"
+        app:queryBackground="@color/transparant"
+        app:queryHint="@string/search_home">
+
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/pilihan_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/menu_home"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kpkp_search"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/pick_background_menu"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pilihan_menu">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menu_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenblue">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="48dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Menu 1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image1"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="180dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="174dp"
+                android:text="Menu 2"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image2"/>
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="320dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="312dp"
+                android:text="Menu 3"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/upcoming_home"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_docter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/pick_background_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upcoming">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_cl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/home_foto2"
+                android:layout_width="162dp"
+                android:layout_height="128dp"
+                android:src="@drawable/logo_aplikasi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_nama2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/item_nama"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_spesialis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_spesialis"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_nama2" />
+
+            <ImageView
+                android:id="@+id/home_calender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_hari2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:text="@string/item_hari"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis2" />
+
+            <TextView
+                android:id="@+id/home_tglbln2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_tglbln"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis2" />
+
+            <ImageView
+                android:id="@+id/home_clock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:src="@drawable/baseline_history_toggle_off_24"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/home_jam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="324dp"
+                android:layout_marginTop="26dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/item_jam"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/home_foto2"
+                app:layout_constraintTop_toBottomOf="@+id/home_spesialis2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_docter2"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

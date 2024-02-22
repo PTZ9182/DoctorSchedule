@@ -24,4 +24,21 @@
     <string name="rg_button_daftar">Daftar</string>
     <string name="rg_punyaakun">Sudah punya akun?</string>
     <string name="rg_login">Masuk</string>
+
+    <!-- List_Item -->
+    <string name="item_nama">Dr.Jobin Armando</string>
+    <string name="item_spesialis">Dokter Gigi</string>
+    <string name="item_hari">Sunday</string>
+    <string name="item_tglbln">12 June</string>
+    <string name="item_jam">11:00 – 12:00</string>
+    <string name="item_detail">Detail</string>
+
+    <!-- Home -->
+    <string name="hello_home">Hello, </string>
+    <string name="nama_home">Prastia Zaman</string>
+    <string name="menu_home">Menu</string>
+    <string name="search_home">Search</string>
+    <string name="upcoming_home">Upcoming</string>
+    <string name="avaible_list">Avaible</string>
+    <string name="not_avaible_list">Not Avaible</string>
 </resources>

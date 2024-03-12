@@ -81,7 +81,7 @@ class RegisterActivity : AppCompatActivity(), RegisterTask.RegisterCallback {
     }
 
     private fun showRegistrationFailureMessage() {
-        Toast.makeText(this, "Registrasi gagal", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Registrasi gagal karena email sudah terdaftar", Toast.LENGTH_SHORT).show()
     }
 
     private fun navigateToLoginActivity() {

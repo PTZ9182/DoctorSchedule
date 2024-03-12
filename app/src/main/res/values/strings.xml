@@ -9,7 +9,7 @@
     <string name="isiform_email">Email</string>
     <string name="isiform_password">Password</string>
     <string name="button_login">login</string>
-    <string name="belumregis">Belum punya akun perusahaan?</string>
+    <string name="belumregis">Belum punya akun ?</string>
     <string name="regis">Daftar</string>
 
     <!--Register-->
@@ -24,4 +24,20 @@
     <string name="rg_button_daftar">Daftar</string>
     <string name="rg_punyaakun">Sudah punya akun?</string>
     <string name="rg_login">Masuk</string>
+
+    <!--Pra Login-->
+    <string name="pl_logo">logo</string>
+    <string name="pl_login">Pilih Login</string>
+    <string name="pl_text">* Untuk akun doctor sudah disediakan sesuai dengan ketentuan yang telah diberikan</string>
+    <string name="pl_button_user">User</string>
+    <string name="pl_button_doctor">Doctor</string>
+
+    <!--LoginDoctrr-->
+    <string name="dlogo">logo</string>
+    <string name="dlogin">Login Doctor</string>
+    <string name="demail">Email</string>
+    <string name="dpassword">Password</string>
+    <string name="disiform_nama">Nama</string>
+    <string name="disiform_password">Password</string>
+    <string name="dbutton_login">login</string>
 </resources>

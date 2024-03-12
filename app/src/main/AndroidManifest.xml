@@ -19,12 +19,6 @@
             android:name="com.example.ui.ListActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.ui.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.ui.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.MainActivity"
             android:exported="false" />
         <activity
